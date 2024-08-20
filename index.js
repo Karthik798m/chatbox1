@@ -34,4 +34,14 @@ function fun(){
 }
 
 document.querySelector(".send").addEventListener("click",fun)
+document.addEventListener('keypress',function(event){
+   enter(event.key)
+})
 
+function enter(key){
+    switch(key){
+        case 'Enter':
+            fun();
+        break;    
+    }
+}
