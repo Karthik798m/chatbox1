@@ -29,13 +29,13 @@ input{
 }
 .grid{
     display:grid;
-    grid-template-rows:40px 477px 50px ;
-    background-color: #201d1d;
+    grid-template-rows:1fr 4fr 0.2fr;
+    background-color:  #201d1d ;
     width:100%;
-    
+    margin:0;
     padding:0;
     
-    
+     
     
     
 }
@@ -46,11 +46,15 @@ input{
     background-color: #312c2c;
     padding: 0;
     margin:0;
+
 }
 .message{
+    position:relative;
     display:flex;
-    background-color: #201d1d;
-    margin-bottom:20px
+    background-color:  #201d1d;
+    padding:0;
+
+    margin-bottom:10px;
     
 }
 .para{
@@ -73,6 +77,7 @@ input{
     margin-right: 10px;
     color:white;
     
+    
 }
 .send{
     flex:1;
@@ -91,6 +96,7 @@ input{
     overflow-x: hidden;
     margin-right:20px;
     margin-left: 20px;
+    padding-bottom: 0px;
 }
 .send:hover{
     transition:0.2s;
