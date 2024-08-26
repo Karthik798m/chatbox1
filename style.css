@@ -24,7 +24,11 @@ input{
 .chats{
     background-color: rgb(39, 36, 36);
     width:300px;
-    
+    animation: slideback 0.6s;
+    display:flex;
+    flex-direction: column;
+    text-wrap: nowrap;
+    justify-content: center;
    
 }
 .grid{
@@ -212,11 +216,51 @@ button:hover{
     }
   }
 
+.client{
+    animation:pop 0.2s;
+}
+
+.slide{
+    animation:slide 0.6s;
+    width:0px;
+}
+
+@keyframes slide{
+    0%{
+        width:300px;
+    }
+    100%{
+        width:0px;
+    }
+
+}
+@keyframes slideback{
+    0%{
+        width:0px;
+    }
+    100%{
+        width:300px;
+    }
+
+}
+
+.mbtn{
+    background-color:rgb(39, 36, 36);
+    border-radius: 0 10px 10px 0;
+    padding:7px
+}
 
 
+.cbox{
+    text-align: center;
+    
+    padding:15px;
+    transition:0.2s
+}
 
-
-
-
+.cbox:hover{
+ transition:0.2s;
+ background-color: #615EFC;
+}
 
 

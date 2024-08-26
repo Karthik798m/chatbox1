@@ -14,7 +14,7 @@ function fun(){
 
         const b=document.createElement("div")
         document.querySelector(".chat").appendChild(b)
-        b.classList.add("my")
+        b.classList.add("client")
 
 
 
@@ -45,3 +45,19 @@ function enter(key){
         break;    
     }
 }
+
+document.querySelector('.mbtn').addEventListener('click',function(){
+    document.querySelector('.chats').classList.toggle("slide")
+    document.querySelector('.chats>ul').classList.toggle("fade")
+
+})
+
+function swap() {
+    var x = document.querySelector(".slideicon");
+    if (x.attributes.src.value === "./arrow-bar-left.svg") {
+      x.setAttribute('src',"./arrow-bar-right.svg");
+    } else {
+      x.setAttribute('src','./arrow-bar-left.svg');
+    }
+  }
+  document.querySelector('.mbtn').addEventListener('click',swap)
